@@ -1,4 +1,5 @@
 import requests
+import os
 from telegram.ext import Updater, InlineQueryHandler
 from telegram import InlineQueryResultArticle, InputTextMessageContent
 
