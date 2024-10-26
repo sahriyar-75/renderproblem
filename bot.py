@@ -6,7 +6,7 @@ from telegram import InlineQueryResultArticle, InputTextMessageContent
 
 app = Flask(__name__)
 # Replace with your actual bot token
-BOT_TOKEN = '7919748663:AAFAHuoY8YHLIaH6hY0j8awp432JPszJj2A'
+BOT_TOKEN = '7919748663:AAGfR01s20XVqORCNptYUqZ-0M5VmJM7Q3g'
 
 # Replace with your actual YouTube API key
 YOUTUBE_API_KEY = 'AIzaSyC6LCQUj9QPcJ2-enpov_cRrQSKMa6ZKIs'
