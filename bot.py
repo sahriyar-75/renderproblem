@@ -83,5 +83,6 @@ def main():
   updater.start_polling()
   updater.idle()
 
-if __name__ == "__main__":
-  main()
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # Use the PORT env variable or default to 5000
+    app.run(host='0.0.0.0', port=port)
