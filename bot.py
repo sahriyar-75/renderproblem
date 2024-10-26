@@ -1,8 +1,10 @@
+from flask import Flask, request, render_template
 import requests
 import os
 from telegram.ext import Updater, InlineQueryHandler
 from telegram import InlineQueryResultArticle, InputTextMessageContent
 
+app = Flask(__name__)
 # Replace with your actual bot token
 BOT_TOKEN = '7919748663:AAFAHuoY8YHLIaH6hY0j8awp432JPszJj2A'
 
@@ -83,6 +85,10 @@ def main():
 
   updater.start_polling()
   updater.idle()
+
+@app.route('/')
+def home():
+    return "Hello, World!"
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # Use the PORT env variable or default to 5000
